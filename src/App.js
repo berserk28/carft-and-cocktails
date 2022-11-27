@@ -1,19 +1,14 @@
-import Navbar from "./components/navbar";
-import Showcase from "./components/showcase";
-import Footer from "./components/footer";
+import { Navbar, Showcase, Footer } from "./components/index";
+import React from "react";
 
-function App() {
+const App = () => {
   return (
-    <main className=" text-light">
-      <div className=" overlay">
-        <div className="container">
-          <Navbar />
-          <Showcase />
-          <Footer />
-        </div>
-      </div>
-    </main>
+    <div>
+      <Navbar />
+      <Showcase />
+      <Footer />
+    </div>
   );
-}
+};
 
 export default App;
