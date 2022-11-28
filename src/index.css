@@ -1,0 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri&display=swap");
+:root {
+  --color-text: #000000;
+  --color-primary: #fd5033;
+  --color-hover: #ce9089;
+  --font-family-text: Open Sans;
+  --font-family-title: "El Messiri", sans-serif;
+}

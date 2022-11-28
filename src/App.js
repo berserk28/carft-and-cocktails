@@ -1,9 +1,9 @@
 import { Navbar, Showcase, Footer } from "./components/index";
 import React from "react";
-
+import "./app.css";
 const App = () => {
   return (
-    <div>
+    <div className="gradient-bg">
       <Navbar />
       <Showcase />
       <Footer />

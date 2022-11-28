@@ -1,0 +1,34 @@
+.Cocktail__navbar {
+  height: 194px;
+  justify-content: center;
+  line-height: 36px;
+  font-size: 24px;
+  font-weight: 500;
+  padding: 2rem 6rem;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  font-family: var(--font-family-text);
+  letter-spacing: -0.05em;
+}
+
+.Cocktail__navbar-logo {
+  justify-content: center;
+}
+
+.Cocktail__navbar-title {
+  font-weight: 500;
+  font-size: 80px;
+  line-height: 150%;
+  font-family: var(--font-family-title);
+}
+
+.Cocktail__navbar-links {
+  display: flex;
+  justify-content: center;
+}
+
+.Cocktail__navbar-links p {
+  padding: 1rem;
+  justify-content: center;
+}
