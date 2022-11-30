@@ -1,11 +1,12 @@
 .Cocktail__navbar {
-  height: 194px;
+  display: f;
   justify-content: center;
+  align-items: center;
   line-height: 36px;
   font-size: 24px;
   font-weight: 500;
   padding: 2rem 6rem;
-  display: flex;
+
   justify-content: space-between;
   text-align: center;
   font-family: var(--font-family-text);
@@ -13,22 +14,64 @@
 }
 
 .Cocktail__navbar-logo {
-  justify-content: center;
+  display: flex;
+
+  height: 50px;
+  align-items: center;
+}
+.logo {
+  color: var(--color-primary);
+  align-self: flex-start;
 }
 
+.logo-text {
+  margin-right: 5px;
+  font-size: 2rem;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 .Cocktail__navbar-title {
+  justify-content: center;
   font-weight: 500;
   font-size: 80px;
   line-height: 150%;
   font-family: var(--font-family-title);
 }
 
+.Cocktail__navbar-title a:hover {
+  color: black;
+}
+
 .Cocktail__navbar-links {
   display: flex;
+
   justify-content: center;
+  align-items: center;
 }
 
 .Cocktail__navbar-links p {
   padding: 1rem;
   justify-content: center;
+}
+.Cocktail__navbar-links p a {
+  padding: 7px 14px;
+  border-radius: 5px;
+}
+
+.Cocktail__navbar-links p a:hover {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+/* styling the responsive menu */
+.Cocktail__navbar-menu {
+  display: none;
+}
+
+.Cocktail__navbar-menu svg {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1050px) {
+  .Cocktail__navbar {
+  }
 }
