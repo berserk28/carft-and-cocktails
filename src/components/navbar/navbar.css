@@ -1,5 +1,6 @@
 .Cocktail__navbar {
-  align-items: center;
+  display: flex;
+
   line-height: 36px;
   font-size: 24px;
   font-weight: 500;
@@ -10,14 +11,10 @@
   letter-spacing: -0.05em;
 }
 
-.nav-bg {
-  background-color: ;
-}
 .Cocktail__navbar-logo {
   display: flex;
   flex-basis: 25%;
   height: 50px;
-  align-items: center;
 }
 .logo {
   color: var(--color-primary);
