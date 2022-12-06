@@ -23,7 +23,7 @@ export default function Navbar() {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
-    <nav className="Cocktail__navbar ">
+    <nav className="Cocktail__navbar  nav-bg">
       <div className="Cocktail__navbar-logo">
         <p className="logo-text">Cocktails</p>
         <FaCocktail className="logo" />
