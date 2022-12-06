@@ -3,7 +3,7 @@ import React from "react";
 import "./app.css";
 const App = () => {
   return (
-    <div className="gradient-bg">
+    <div>
       <Navbar />
       <Showcase />
       <Footer />
