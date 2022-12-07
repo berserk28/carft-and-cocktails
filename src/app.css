@@ -14,7 +14,12 @@ a {
 }
 
 .gradient-text {
-  color: var(--color-primary);
+  /* ff 3.6+ */
+  color: linear-gradient(
+    90deg,
+    rgba(255, 138, 113, 1) 0%,
+    rgba(5, 16, 31, 1) 100%
+  );
 }
 
 .section__padding {

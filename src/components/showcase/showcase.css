@@ -1,18 +1,13 @@
-.showcase-bg {
-  background-image: url(../../images/3f5b1249ad11d3de41191b84b63dd347.jpg);
-  width: 100%;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  height: 70vh;
+.showcase__container {
+  display: flex;
 }
 
-.showcase-bg::after {
-  content: "";
-  position: relative;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+.showcase__container-header h1 {
+  font-family: Inter;
+  font-size: 6rem;
+  font-weight: 500;
+  line-height: 36px;
+  letter-spacing: -0.05em;
+  text-align: center;
+  color: var(--gradient-bar);
 }

@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=El+Messiri&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=El+Messiri&family=Manrope&display=swap");
 :root {
+  --gradient-text: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
+  --gradient-bar: linear-gradient(103.22deg, #ae67fa -13.86%, #f49867 99.55%);
   --color-text: #ff8a71;
   --color-background: #05101f;
   --color-primary: #81afdd;
