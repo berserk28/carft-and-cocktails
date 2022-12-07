@@ -1,92 +1,52 @@
 .nav-bg {
-  /* ff 3.6+ */
-  background: -moz-radial-gradient(
-    circle at 90% 10%,
-    rgba(232, 232, 231, 1) 0%,
-    rgba(184, 154, 150, 1) 100%
-  );
-
-  /* safari 5.1+,chrome 10+ */
-  background: -webkit-radial-gradient(
-    circle at 90% 10%,
-    rgba(232, 232, 231, 1) 0%,
-    rgba(184, 154, 150, 1) 100%
-  );
-
-  /* opera 11.10+ */
-  background: -o-radial-gradient(
-    circle at 90% 10%,
-    rgba(232, 232, 231, 1) 0%,
-    rgba(184, 154, 150, 1) 100%
-  );
-
-  /* ie 10+ */
-  background: -ms-radial-gradient(
-    circle at 90% 10%,
-    rgba(232, 232, 231, 1) 0%,
-    rgba(184, 154, 150, 1) 100%
-  );
-
-  /* global 92%+ browsers support */
-  background: radial-gradient(
-    circle at 90% 10%,
-    rgba(232, 232, 231, 1) 0%,
-    rgba(184, 154, 150, 1) 100%
-  );
+  background-color: var(--color-background);
+  color: var(--color-primary);
 }
-
 .Cocktail__navbar {
   display: flex;
-
   line-height: 36px;
   font-size: 24px;
   font-weight: 500;
-  padding: 2rem 6rem;
+  padding: 2rem 10rem;
   justify-content: space-between;
   text-align: center;
   font-family: var(--font-family-text);
   letter-spacing: -0.05em;
+  align-items: center;
 }
 
 .Cocktail__navbar-logo {
   display: flex;
-  flex-basis: 25%;
+  flex: 1;
+  justify-content: flex-start;
   height: 50px;
 }
 .logo {
-  color: var(--color-primary);
+  color: var(--color-text);
   align-self: flex-start;
 }
 
 .logo-text {
   margin-right: 5px;
   font-size: 2.5rem;
+  font-weight: 500;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.Cocktail__navbar-title {
-  flex-basis: 50%;
-
-  justify-content: center;
-  font-weight: 500;
-  font-size: 100px;
-  line-height: 150%;
-  font-family: var(--font-family-title);
-}
-
-.Cocktail__navbar-title a:hover {
-  color: black;
-}
-
 .Cocktail__navbar-links {
   display: flex;
-  flex-basis: 25%;
-
-  justify-content: center;
+  flex: 1;
+  justify-content: flex-end;
   align-items: center;
-}
 
+  font-size: 2rempx;
+  line-height: 20px;
+  font-family: var(--font-links);
+}
+.Cocktail__navbar-links-container {
+  display: flex;
+}
 .Cocktail__navbar-links p {
-  padding: 1rem;
+  padding: 1rem 2rem;
   justify-content: center;
 }
 .Cocktail__navbar-links p a {
@@ -95,21 +55,60 @@
 }
 
 .Cocktail__navbar-links p a:hover {
-  background-color: var(--color-primary);
+  background-color: #042c54;
   color: white;
 }
 
 /* styling the responsive menu */
 .Cocktail__navbar-menu {
   display: none;
+  margin-left: 2rem;
+  position: relative;
+}
+
+.Cocktail__navbar-menu-container-links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  text-align: end;
+  padding: 2rem 2rem;
+  position: absolute;
+  top: 10px;
+  right: 0;
+  background-color: var(--color-primary);
+  color: white;
+  border-radius: 10px;
+  min-width: 200px;
+  opacity: 0.9;
+  box-shadow: 0 0 5 rgba(0, 0, 0, 0.2);
 }
 
 .Cocktail__navbar-menu svg {
   cursor: pointer;
 }
 
-@media screen and (max-width: 500px) {
+@media only screen and (max-width: 1200px) {
   .Cocktail__navbar {
+    padding: 2rem 4rem;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .Cocktail__navbar {
+    padding: 2rem 2rem;
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  .Cocktail__navbar {
+    align-items: flex-start;
+  }
+  .Cocktail__navbar-links-container {
+    display: none;
+  }
+
+  .Cocktail__navbar-menu {
     display: block;
   }
 }

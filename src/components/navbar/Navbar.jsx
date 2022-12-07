@@ -10,7 +10,7 @@ const Menu = () => {
         <a href="#home">Home</a>
       </p>
       <p>
-        <a href="#home">About</a>
+        <a href="#about">About</a>
       </p>
       <p>
         <a href="#contact">Contact</a>
@@ -20,28 +20,31 @@ const Menu = () => {
 };
 
 export default function Navbar() {
-  const [toggleMenu, setToggleMenu] = useState(false);
+  const [toggleMenu, setToggleMenu] = useState(true);
 
   return (
-    <nav className="Cocktail__navbar  nav-bg">
+    <nav className="Cocktail__navbar nav-bg">
       <div className="Cocktail__navbar-logo">
         <p className="logo-text">Cocktails</p>
         <FaCocktail className="logo" />
       </div>
 
       <div className="Cocktail__navbar-links">
-        <Menu />
+        <div className="Cocktail__navbar-links-container">
+          <Menu />
+        </div>
+
         <div className="Cocktail__navbar-menu">
           {toggleMenu ? (
             <RiCloseLine
               color={"var(--color-primary)"}
-              size={27}
+              size={40}
               onClick={() => setToggleMenu(!toggleMenu)}
             />
           ) : (
             <RiMenu3Line
               color={"var(--color-primary)"}
-              size={27}
+              size={40}
               onClick={() => setToggleMenu(!toggleMenu)}
             />
           )}

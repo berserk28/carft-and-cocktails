@@ -1,8 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=El+Messiri&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri&family=Manrope&display=swap");
 :root {
-  --color-text: #000000;
-  --color-primary: #fd5033;
+  --color-text: #ff8a71;
+  --color-background: #05101f;
+  --color-primary: #81afdd;
   --color-hover: #ce9089;
   --font-family-text: Open Sans;
-  --font-family-title: "El Messiri", sans-serif;
+  --font-family-title: manrope;
+  --font-links: "Manrope", sans-serif;
 }
