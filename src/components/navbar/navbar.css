@@ -1,11 +1,10 @@
 .nav-bg {
-  background-color: var(--color-background);
   color: var(--color-primary);
 }
 .Cocktail__navbar {
   display: flex;
   line-height: 36px;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 500;
   padding: 2rem 10rem;
   justify-content: space-between;
@@ -22,7 +21,7 @@
   height: 50px;
 }
 .logo {
-  color: var(--color-text);
+  color: var(--color-btn);
   align-self: flex-start;
 }
 
@@ -38,7 +37,6 @@
   justify-content: flex-end;
   align-items: center;
 
-  font-size: 2rempx;
   line-height: 20px;
   font-family: var(--font-links);
 }
@@ -49,14 +47,21 @@
   padding: 1rem 2rem;
   justify-content: center;
 }
-.Cocktail__navbar-links p a {
+.Cocktail__navbar-links p a,
+.Cocktail__navbar-sign p {
   padding: 7px 14px;
   border-radius: 5px;
 }
-
-.Cocktail__navbar-links p a:hover {
+.Cocktail__navbar-sign p {
+  margin-right: 5px;
+}
+.Cocktail__navbar-links p a:hover,
+.Cocktail__navbar-sign p:hover {
   background-color: #042c54;
   color: white;
+}
+.Cocktail__navbar-sign button:hover {
+  background-color: var(--color-primary);
 }
 
 /* styling the responsive menu */
@@ -88,19 +93,47 @@
   cursor: pointer;
 }
 
+.Cocktail__navbar-sign {
+  white-space: nowrap;
+  display: flex;
+  font-family: var(--font-family-title);
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 25px;
+  text-transform: capitalize;
+  margin: 0 1rem;
+  cursor: pointer;
+  align-items: center;
+}
+
+.Cocktail__navbar-sign button {
+  padding: 5px 10px;
+  margin-bottom: 8px;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  background: #ff4820;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
 @media only screen and (max-width: 1200px) {
   .Cocktail__navbar {
     padding: 2rem 4rem;
   }
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 1050px) {
   .Cocktail__navbar {
-    padding: 2rem 2rem;
+    padding: 2rem 1rem;
   }
 }
 
-@media only screen and (max-width: 820px) {
+@media only screen and (max-width: 920px) {
   .Cocktail__navbar {
     align-items: flex-start;
   }

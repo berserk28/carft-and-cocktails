@@ -3,11 +3,13 @@
 :root {
   --gradient-text: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
   --gradient-bar: linear-gradient(103.22deg, #ae67fa -13.86%, #f49867 99.55%);
-  --color-text: #ff8a71;
+  --color-text: #81afdd;
   --color-background: #05101f;
   --color-primary: #81afdd;
-  --color-hover: #ce9089;
+  --color-btn: #ff4820;
+  --color-hover: #ff8a71;
+  --color-footer: #031b34;
   --font-family-text: Open Sans;
-  --font-family-title: manrope;
+  --font-family-title: "Manrope", sans-serif;
   --font-links: "Manrope", sans-serif;
 }

@@ -20,20 +20,23 @@ const Menu = () => {
 };
 
 export default function Navbar() {
-  const [toggleMenu, setToggleMenu] = useState(true);
+  const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
     <nav className="Cocktail__navbar nav-bg">
       <div className="Cocktail__navbar-logo">
         <p className="logo-text">Cocktails</p>
-        <FaCocktail className="logo" />
+        <FaCocktail className="logo " />
       </div>
 
       <div className="Cocktail__navbar-links">
         <div className="Cocktail__navbar-links-container">
           <Menu />
         </div>
-
+        <div className="Cocktail__navbar-sign">
+          <p>Sign in</p>
+          <button>Sign up</button>
+        </div>
         <div className="Cocktail__navbar-menu">
           {toggleMenu ? (
             <RiCloseLine
