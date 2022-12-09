@@ -106,7 +106,8 @@
   align-items: center;
 }
 
-.Cocktail__navbar-sign button {
+.Cocktail__navbar-sign button,
+.Cocktail__navbar-sign p {
   padding: 5px 10px;
   margin-bottom: 8px;
   padding: 0.5rem 1rem;
@@ -120,6 +121,10 @@
   outline: none;
   cursor: pointer;
   border-radius: 5px;
+  letter-spacing: 2px;
+}
+.Cocktail__navbar-sign p {
+  background-color: var(--color-footer);
 }
 @media only screen and (max-width: 1200px) {
   .Cocktail__navbar {
@@ -143,5 +148,20 @@
 
   .Cocktail__navbar-menu {
     display: block;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .Cocktail__navbar {
+    display: block;
+    padding: 0.2em;
+    justify-content: center;
+  }
+  .Cocktail__navbar-logo {
+    padding: 10px 0px 50px 0px;
+    justify-content: center;
+  }
+  .Cocktail__navbar-links {
+    justify-content: center;
+    margin-top: 20px;
   }
 }

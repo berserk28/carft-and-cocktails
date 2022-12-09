@@ -35,7 +35,7 @@ export default function Navbar() {
         </div>
         <div className="Cocktail__navbar-sign">
           <p>Sign in</p>
-          <button>Sign up</button>
+          <button>Sign Up</button>
         </div>
         <div className="Cocktail__navbar-menu">
           {toggleMenu ? (

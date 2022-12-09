@@ -1,6 +1,6 @@
 import React from "react";
 import "./showcase.css";
-import image from "../../images/blue.jpg";
+import image from "../../images/glass.png";
 export default function Showcase() {
   return (
     <div className="showcase__container section__padding ">
@@ -10,7 +10,7 @@ export default function Showcase() {
           <p>The worlds best cocktail resource</p>
         </div>
         <div className="showcase__container-header-input">
-          <input type="email" placeholder="Your Email Address" />
+          <input type="text" placeholder="Your Cocktail name" />
           <button type="button">Get Started</button>
         </div>
       </div>
