@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import { FaCocktail } from "react-icons/fa";
 import "./navbar.css";
@@ -7,13 +8,13 @@ const Menu = () => {
   return (
     <>
       <p>
-        <a href="/home">Home</a>
+        <Link to="/">Home</Link>
       </p>
       <p>
-        <a href="/about">About</a>
+        <Link to="/About">About</Link>
       </p>
       <p>
-        <a href="/contact">Contact</a>
+        <Link to="/Contact">Contact</Link>
       </p>
     </>
   );

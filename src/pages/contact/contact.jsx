@@ -30,12 +30,7 @@ const contact = () => {
             ></textarea>
           </div>
           <div class="form-group">
-            <input
-              type="submit"
-              class="btn btn-dark"
-              value="Send"
-              class="bg-dark"
-            />
+            <input type="submit" class="btn btn-dark" value="Send" />
           </div>
         </form>
       </div>

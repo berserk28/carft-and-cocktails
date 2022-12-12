@@ -1,4 +1,5 @@
 import React from "react";
+
 import "./showcase.css";
 import image from "../../images/glass.png";
 export default function Showcase() {
