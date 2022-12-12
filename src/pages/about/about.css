@@ -1,0 +1,25 @@
+.about-container {
+  width: 87vw;
+  height: 87vh;
+
+  margin: auto;
+}
+.about-container h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 4rem;
+  margin-bottom: 50px;
+  text-transform: capitalize;
+}
+
+.about-container h1 span {
+  color: var(--color-btn);
+}
+
+.about-container p {
+  color: var(--color-text);
+  line-height: 2.5rem;
+  font-weight: 400;
+  letter-spacing: 3px;
+  font-size: 20px;
+}
