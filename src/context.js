@@ -7,9 +7,16 @@ const AppContext = React.createContext();
 const AppProvider = ({ children }) => {
   const [searchTerm, setSearchTerm] = useState(false);
   const [searchValue, setSearchValue] = useState("");
+  const [isLoading, setIsloading] = useState(true);
   return (
     <AppContext.Provider
-      value={{ searchTerm, setSearchTerm, searchValue, setSearchValue }}
+      value={{
+        searchTerm,
+        setSearchTerm,
+        searchValue,
+        setSearchValue,
+        isLoading,
+      }}
     >
       {children}
     </AppContext.Provider>
