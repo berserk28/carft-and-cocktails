@@ -7,7 +7,7 @@ const AppContext = React.createContext();
 const AppProvider = ({ children }) => {
   const [searchTerm, setSearchTerm] = useState(false);
   const [searchValue, setSearchValue] = useState("");
-  const [isLoading, setIsloading] = useState(true);
+  const [isLoading, setIsloading] = useState(false);
   return (
     <AppContext.Provider
       value={{

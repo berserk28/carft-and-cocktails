@@ -1,13 +1,16 @@
 import React from "react";
-import { Showcase } from "../../components";
+import { Showcase, List_cocktails } from "../../components";
 import { useGlobalContext } from "../../context";
-
 import "./home.css";
 export default function Home() {
-  const { searchTerm, setSearchTerm, isLoading } = useGlobalContext();
+  const { searchTerm } = useGlobalContext();
   console.log(searchTerm);
   if (searchTerm) {
-    return <div className="Cocktail__home"></div>;
+    return (
+      <div className="Cocktail__home">
+        <List_cocktails />
+      </div>
+    );
   } else {
     return (
       <div className="Cocktail__home">
