@@ -1,12 +1,12 @@
 import React from "react";
+
 import { useContext, useState, useEffect, useCallback } from "react";
-const url = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=";
+
 const AppContext = React.createContext();
 
 const AppProvider = ({ children }) => {
   const [searchTerm, setSearchTerm] = useState(false);
   const [searchValue, setSearchValue] = useState("");
-  const [isLoading, setIsloading] = useState(true);
 
   return (
     <AppContext.Provider
@@ -15,7 +15,6 @@ const AppProvider = ({ children }) => {
         setSearchTerm,
         searchValue,
         setSearchValue,
-        isLoading,
       }}
     >
       {children}

@@ -4,7 +4,7 @@ import { useGlobalContext } from "../../context";
 import "./home.css";
 export default function Home() {
   const { searchTerm } = useGlobalContext();
-  console.log(searchTerm);
+
   if (searchTerm) {
     return (
       <div className="Cocktail__home">
