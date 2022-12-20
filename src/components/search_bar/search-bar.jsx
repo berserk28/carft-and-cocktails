@@ -1,7 +1,8 @@
 import React from "react";
 import { useGlobalContext } from "../../context";
 function Search_bar() {
-  const { searchValue, setSearchTerm, setSearchValue } = useGlobalContext();
+  const { searchTerm, searchValue, setSearchTerm, setSearchValue, cocktails } =
+    useGlobalContext();
   const handleChange = (event) => {
     setSearchValue(event.target.value);
   };
@@ -14,14 +15,16 @@ function Search_bar() {
         value={searchValue}
         placeholder="Your Cocktail name"
       />
-      <button
-        type="button"
-        onClick={() => {
-          setSearchTerm(true);
-        }}
-      >
-        Get Started
-      </button>
+      {cocktails && (
+        <button
+          type="button"
+          onClick={() => {
+            setSearchTerm(false);
+          }}
+        >
+          Get started
+        </button>
+      )}
     </div>
   );
 }

@@ -7,7 +7,7 @@ const AppContext = React.createContext();
 const AppProvider = ({ children }) => {
   const [searchTerm, setSearchTerm] = useState(false);
   const [searchValue, setSearchValue] = useState("");
-
+  const [cocktails, setCokctails] = useState([]);
   return (
     <AppContext.Provider
       value={{
@@ -15,6 +15,8 @@ const AppProvider = ({ children }) => {
         setSearchTerm,
         searchValue,
         setSearchValue,
+        setCokctails,
+        cocktails,
       }}
     >
       {children}

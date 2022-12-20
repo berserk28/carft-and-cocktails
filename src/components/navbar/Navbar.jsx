@@ -3,12 +3,16 @@ import { Link } from "react-router-dom";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import { FaCocktail } from "react-icons/fa";
 import "./navbar.css";
-import { useGlobalcontext } from "../../context";
+import { useGlobalContext } from "../../context";
+
 const Menu = () => {
+  const { setSearchTerm } = useGlobalContext();
   return (
     <>
       <p>
-        <Link to="/">Home</Link>
+        <Link to="/" onClick={() => setSearchTerm(false)}>
+          Home
+        </Link>
       </p>
       <p>
         <Link to="/About">About</Link>

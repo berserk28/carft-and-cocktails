@@ -6,15 +6,14 @@ import { useQuery } from "react-query";
 import { useGlobalContext } from "../../context";
 
 function Cocktails() {
-  const { searchValue } = useGlobalContext();
-  console.log("render");
-  const { isLoading, error, data } = useQuery("cocktail", () =>
+  const { searchValue, setCokctails, cocktails } = useGlobalContext();
+  const { isLoading, error, data, refetch } = useQuery("cocktail", () =>
     fetch(
       `https://www.thecocktaildb.com/api/json/v1/1/search.php?f=${searchValue}`
     ).then((res) => res.json())
   );
-  console.log(data);
-  console.log(searchValue);
+
+  setCokctails(data.drinks);
   if (isLoading)
     return (
       <div className="section__padding List_cocktails">
@@ -34,15 +33,19 @@ function Cocktails() {
         <h1>error</h1>
       </div>
     );
-
-  return (
-    <div className="section__padding List_cocktails">
-      <div className="search-bar-container">
-        <Search_bar className="List_cocktails" />
+  else {
+    return (
+      <div className="section__padding List_cocktails">
+        <div className="search-bar-container">
+          <Search_bar className="List_cocktails" />
+        </div>
+        <button onClick={refetch}>reflesh</button>
+        {cocktails.map((drink) => {
+          return <h2>{drink.strDrink}</h2>;
+        })}
       </div>
-      <h1>data</h1>
-    </div>
-  );
+    );
+  }
 }
 
 export default Cocktails;
