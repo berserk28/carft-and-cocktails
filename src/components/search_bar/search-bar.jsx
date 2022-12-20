@@ -15,16 +15,14 @@ function Search_bar() {
         value={searchValue}
         placeholder="Your Cocktail name"
       />
-      {cocktails && (
-        <button
-          type="button"
-          onClick={() => {
-            setSearchTerm(false);
-          }}
-        >
-          Get started
-        </button>
-      )}
+      <button
+        type="button"
+        onClick={() => {
+          setSearchTerm(!searchTerm);
+        }}
+      >
+        Get started
+      </button>
     </div>
   );
 }
