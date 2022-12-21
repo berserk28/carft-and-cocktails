@@ -9,7 +9,7 @@ import error from "../../pages/error/error";
 function Cocktails() {
   const { searchValue, setCokctails, cocktails, isLoading, error } =
     useGlobalContext();
-  console.log(cocktails);
+
   if (isLoading)
     return (
       <div className="section__padding List_cocktails">
