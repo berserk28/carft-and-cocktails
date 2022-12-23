@@ -15,12 +15,9 @@ const AppProvider = ({ children }) => {
     try {
       const response = await fetch(`${url}${searchValue}`);
       const data = await response.json();
-      setIsloading(false);
-      setError(false);
       console.log(data);
     } catch (error) {
       console.log(error);
-      setError(true);
     }
   };
 
