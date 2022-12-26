@@ -15,6 +15,7 @@ function Search_bar() {
         value={searchValue}
         placeholder="Your Cocktail name"
       />
+
       <button
         type="button"
         onClick={() => {
