@@ -3,9 +3,9 @@ import { Showcase, List_cocktails } from "../../components";
 import { useGlobalContext } from "../../context";
 import "./home.css";
 export default function Home() {
-  const { searchTerm } = useGlobalContext();
+  const { searchTerm, searchValue } = useGlobalContext();
 
-  if (searchTerm) {
+  if (searchValue !== "") {
     return (
       <div className="Cocktail__home">
         <List_cocktails />

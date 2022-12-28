@@ -7,12 +7,9 @@ import { useGlobalContext } from "../../context";
 import error from "../../pages/error/error";
 
 function Cocktails() {
-  const { searchValue } = useGlobalContext();
-  const { isLoading, error, data, refetch } = useQuery("repoData", () =>
-    fetch(`${url}${searchValue}`).then((res) => res.json())
-  );
-
-  if (isLoading)
+  const { searchValue, isloading, cocktails } = useGlobalContext();
+  console.log(cocktails);
+  if (isloading)
     return (
       <div className="section__padding List_cocktails">
         <div className="search-bar-container">
@@ -32,19 +29,12 @@ function Cocktails() {
       </div>
     );
   else {
-    const { drinks } = data;
-    return (
-      <div className="section__padding List_cocktails">
-        <div className="search-bar-container">
-          <Search_bar className="List_cocktails" refetch={refetch} />
-          <Spinner />
-        </div>
-
-        {drinks.map((item) => {
-          return <h1>{item.strDrink}</h1>;
-        })}
+    <div className="section__padding List_cocktails">
+      <div className="search-bar-container">
+        <Search_bar className="List_cocktails" />
       </div>
-    );
+      <h1>data</h1>
+    </div>;
   }
 }
 
