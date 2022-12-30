@@ -7,7 +7,7 @@ import { useGlobalContext } from "../../context";
 import error from "../../pages/error/error";
 
 function Cocktails() {
-  const { searchValue, isloading, cocktails } = useGlobalContext();
+  const { searchValue, isloading, cocktails, error } = useGlobalContext();
   console.log(cocktails);
   if (isloading)
     return (
@@ -28,13 +28,24 @@ function Cocktails() {
         <h1>error</h1>
       </div>
     );
-  else {
-    <div className="section__padding List_cocktails">
-      <div className="search-bar-container">
-        <Search_bar className="List_cocktails" />
+  if (!cocktails) {
+    return (
+      <div className="section__padding List_cocktails">
+        <div className="search-bar-container">
+          <Search_bar className="List_cocktails" />
+        </div>
+        <h1>sry no reasults</h1>
       </div>
-      <h1>data</h1>
-    </div>;
+    );
+  } else {
+    return (
+      <div className="section__padding List_cocktails">
+        <div className="search-bar-container">
+          <Search_bar className="List_cocktails" />
+        </div>
+        .
+      </div>
+    );
   }
 }
 
