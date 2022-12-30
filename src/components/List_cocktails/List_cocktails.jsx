@@ -43,7 +43,11 @@ function Cocktails() {
         <div className="search-bar-container">
           <Search_bar className="List_cocktails" />
         </div>
-        .
+        <div className=" List_cocktails-grid">
+          {cocktails.map((item) => {
+            return;
+          })}
+        </div>
       </div>
     );
   }
