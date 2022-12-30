@@ -9,19 +9,23 @@ const AppProvider = ({ children }) => {
   const [searchValue, setSearchValue] = useState("");
   const [cocktails, setCokctails] = useState([]);
   const [isloading, setIsloading] = useState(true);
-
+  const [error, setError] = useState(true);
   const fetchData = async () => {
+    setIsloading(true);
     try {
       const response = await fetch(`${url}${searchValue}`);
       const data = await response.json();
-      setCokctails(data);
+      const { drinks } = data;
+      setError(false);
+      setCokctails(drinks);
+      setIsloading(false);
     } catch (error) {
       console.log(error);
     }
   };
   useEffect(() => {
     fetchData();
-  }, [searchValue, fetchData]);
+  }, [searchValue]);
 
   return (
     <AppContext.Provider
@@ -33,6 +37,7 @@ const AppProvider = ({ children }) => {
         setCokctails,
         cocktails,
         isloading,
+        error,
       }}
     >
       {children}
