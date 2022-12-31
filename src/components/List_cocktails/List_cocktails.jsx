@@ -4,11 +4,12 @@ import { Search_bar } from "../index";
 import { Spinner } from "../index";
 import { useContext, useState, useEffect, useCallback } from "react";
 import { useGlobalContext } from "../../context";
+import Single_cocktail from "../single_cocktail/single_cocktail";
 import error from "../../pages/error/error";
 
 function Cocktails() {
   const { searchValue, isloading, cocktails, error } = useGlobalContext();
-  console.log(cocktails);
+
   if (isloading)
     return (
       <div className="section__padding List_cocktails">
@@ -45,7 +46,11 @@ function Cocktails() {
         </div>
         <div className=" List_cocktails-grid">
           {cocktails.map((item) => {
-            return;
+            return (
+              <h1>
+                <Single_cocktail {...item} />
+              </h1>
+            );
           })}
         </div>
       </div>
