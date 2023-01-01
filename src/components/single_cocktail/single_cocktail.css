@@ -1,5 +1,41 @@
-img {
+.single_cocktail-container {
+  display: flex;
+  cursor: pointer;
+  border: 6px solid var(--color-text);
+  border-radius: 5px;
+  position: relative;
   width: 180px;
   height: 180px;
-  border-radius: 5px;
+  text-align: center;
+  box-shadow: 2px 5px var(--color-background);
+}
+.single_cocktail-container:hover {
+  box-shadow: 5px 10px black;
+}
+
+.single_cocktail-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.single_cocktail-container-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: background-color 1s;
+  background-color: var(--color-footer);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.7s;
+}
+.single_cocktail-container-info:hover {
+  opacity: 0.6;
+}
+
+.single_cocktail-container-info h3 {
+  color: var(--color-hover);
 }
