@@ -1,8 +1,13 @@
 import React from "react";
 import "./single_cocktail.css";
-const Single_cocktail = ({ strDrinkThumb, strDrink }) => {
+import { useGlobalContext } from "../../context";
+const Single_cocktail = ({ strDrinkThumb, strDrink, idDrink }) => {
+  const { setcoktailId } = useGlobalContext();
   return (
-    <div className="single_cocktail-container">
+    <div
+      onClick={() => setcoktailId(idDrink)}
+      className="single_cocktail-container"
+    >
       <img src={strDrinkThumb} alt={strDrink} />
       <div className="single_cocktail-container-info">
         <h3>{strDrink}</h3>
