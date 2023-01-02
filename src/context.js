@@ -10,12 +10,15 @@ const AppProvider = ({ children }) => {
   const [cocktails, setCokctails] = useState([]);
   const [isloading, setIsloading] = useState(true);
   const [error, setError] = useState(true);
+  const [coktailId, setcoktailId] = useState("");
+
   const fetchData = async () => {
     setIsloading(true);
     try {
       const response = await fetch(`${url}${searchValue}`);
       const data = await response.json();
       const { drinks } = data;
+
       setError(false);
       setCokctails(drinks);
       setIsloading(false);
@@ -38,6 +41,7 @@ const AppProvider = ({ children }) => {
         cocktails,
         isloading,
         error,
+        setcoktailId,
       }}
     >
       {children}
