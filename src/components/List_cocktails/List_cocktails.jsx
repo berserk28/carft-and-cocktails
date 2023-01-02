@@ -2,12 +2,11 @@ import React from "react";
 import "./List_cocktails.css";
 import { Search_bar } from "../index";
 import { Spinner } from "../index";
-import { useContext, useState, useEffect, useCallback } from "react";
 import { useGlobalContext } from "../../context";
-import Single_cocktail from "../single_cocktail/single_cocktail";
+import Cocktail from "../cocktail/cocktail";
 import error from "../../pages/error/error";
 
-function Cocktails() {
+function List_cocktails() {
   const { searchValue, isloading, cocktails, error } = useGlobalContext();
 
   if (isloading)
@@ -48,7 +47,7 @@ function Cocktails() {
           {cocktails.map((item) => {
             return (
               <h1>
-                <Single_cocktail {...item} />
+                <Cocktail {...item} />
               </h1>
             );
           })}
@@ -58,4 +57,4 @@ function Cocktails() {
   }
 }
 
-export default Cocktails;
+export default List_cocktails;
