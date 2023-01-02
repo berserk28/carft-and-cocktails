@@ -1,7 +1,7 @@
 import React from "react";
-import "./single_cocktail.css";
+import "./cocktail.css";
 import { useGlobalContext } from "../../context";
-const Single_cocktail = ({ strDrinkThumb, strDrink, idDrink }) => {
+const Cocktail = ({ strDrinkThumb, strDrink, idDrink }) => {
   const { setcoktailId } = useGlobalContext();
   return (
     <div
@@ -16,4 +16,4 @@ const Single_cocktail = ({ strDrinkThumb, strDrink, idDrink }) => {
   );
 };
 
-export default Single_cocktail;
+export default Cocktail;
