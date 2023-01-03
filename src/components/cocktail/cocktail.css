@@ -49,3 +49,7 @@
   padding: 6px 12px;
   border-radius: 10px;
 }
+
+.btn-detail:hover {
+  background-color: #fff;
+}

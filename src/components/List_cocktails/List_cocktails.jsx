@@ -47,7 +47,7 @@ function List_cocktails() {
           {cocktails.map((item) => {
             return (
               <h1>
-                <Cocktail {...item} />
+                <Cocktail key={item.idDrink} {...item} />
               </h1>
             );
           })}

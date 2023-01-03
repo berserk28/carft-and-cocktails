@@ -14,7 +14,7 @@ const Cocktail = ({ strDrinkThumb, strDrink, idDrink }) => {
       <img src={strDrinkThumb} alt={strDrink} />
       <div className="single_cocktail-container-info">
         <h3>{strDrink}</h3>
-        <Link to="/SingleCocltail" className=" btn-detail">
+        <Link to={`/SingleCocltail/${idDrink}`} className=" btn-detail">
           Details
         </Link>
       </div>

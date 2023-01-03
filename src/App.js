@@ -13,7 +13,7 @@ const App = () => {
           <Route exact path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/SingleCocltail" element={<SingleCocltail />} />
+          <Route path="/SingleCocltail/:id" element={<SingleCocltail />} />
           <Route path="*" element={<Error />} />
         </Routes>
       </Router>
