@@ -1,5 +1,5 @@
 import { Navbar, Showcase, Footer } from "./components/index";
-import { About, Home, Contact, Error } from "./pages/index";
+import { About, Home, Contact, Error, SingleCocltail } from "./pages/index";
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
@@ -13,6 +13,7 @@ const App = () => {
           <Route exact path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/SingleCocltail" element={<SingleCocltail />} />
           <Route path="*" element={<Error />} />
         </Routes>
       </Router>
