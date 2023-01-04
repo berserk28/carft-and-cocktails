@@ -61,16 +61,11 @@ const SingleCoktail = () => {
       <h1 className="SingleCoctail__container-title">{title}</h1>
       <div className="SingleCoctail__container-cocktail-details">
         <img src={image} alt={title} className="SingleCoctail__container-img" />
-        <div className="SingleCoctail__container-cocktail-details-info">
-          <h3>Name : {title}</h3>
-          <h3>Category : {Category}</h3>
-          <h3>Info :{info}</h3>
-          <h3>Glass :{glass}</h3>
-          <h3>Instructons :{Instructons}</h3>
-        </div>
+        <div className="SingleCoctail__container-cocktail-details-info"></div>
       </div>
     </section>
   );
 };
 
 export default SingleCoktail;
+<span className="indo-title"></span>;

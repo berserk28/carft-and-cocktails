@@ -1,6 +1,54 @@
+.SingleCoctail__container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
 .SingleCoctail__container-btn {
   background-color: var(--color-btn);
-  padding: 7.2px 12.8px;
+  padding: 8px 16.8px;
   font-size: 12.8px;
   text-align: center;
+  min-width: 170px;
+  font-size: 20px;
+  border-radius: 15px;
+  color: #ddd;
+  font-family: var(--font-links);
+  margin-bottom: 30px;
+}
+
+.SingleCoctail__container-btn:hover {
+  background-color: var(--color-primary);
+  color: #ddd;
+}
+
+.SingleCoctail__container-title {
+  letter-spacing: 4px;
+  margin-bottom: 50px;
+}
+
+.SingleCoctail__container-cocktail-details {
+  border: 4px red solid;
+  width: 85vw;
+  max-width: 1100px;
+  text-align: left;
+}
+
+.SingleCoctail__container-img {
+  border-radius: 0.25em;
+}
+
+.SingleCoctail__container-cocktail-details-info h3 {
+  background: var(--color-btn);
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  color: var(--color-primary);
+}
+
+.SingleCoctail__container-cocktail-details-info p {
+  font-weight: bold;
+  text-transform: capitalize;
+  line-height: 1.8;
+  color: #ddd;
 }
