@@ -1,0 +1,6 @@
+.SingleCoctail__container-btn {
+  background-color: var(--color-btn);
+  padding: 7.2px 12.8px;
+  font-size: 12.8px;
+  text-align: center;
+}
