@@ -4,7 +4,7 @@ import { Search_bar } from "../index";
 import { Spinner } from "../index";
 import { useGlobalContext } from "../../context";
 import Cocktail from "../cocktail/cocktail";
-import error from "../../pages/error/error";
+import Error from "../../pages/error/error";
 
 function List_cocktails() {
   const { searchValue, isloading, cocktails, error } = useGlobalContext();
@@ -34,7 +34,7 @@ function List_cocktails() {
         <div className="search-bar-container">
           <Search_bar className="List_cocktails" />
         </div>
-        <h1>sry no reasults</h1>
+        <Error />
       </div>
     );
   } else {

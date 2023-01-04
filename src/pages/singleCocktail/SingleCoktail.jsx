@@ -6,6 +6,7 @@ const url = "https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=";
 
 const SingleCoktail = () => {
   const [cocktail, setcocktail] = useState([]);
+  const [ingredientString, setIngredientString] = useState("");
   const { id } = useParams();
   React.useEffect(() => {
     async function fetchCoctail() {
@@ -13,7 +14,6 @@ const SingleCoktail = () => {
         const response = await fetch(`${url}${id}`);
         const data = await response.json();
         const { drinks } = data;
-
         const {
           strDrink: title,
           strCategory: Category,
@@ -22,13 +22,16 @@ const SingleCoktail = () => {
           strGlass: glass,
           strInstructions: Instructons,
         } = drinks[0];
-        console.log(drinks[0]);
         const ingredients = [];
+        let text = "";
         for (let i = 1; i < 15; i++) {
           if (drinks[0][`strIngredient${i}`]) {
             ingredients[i] = `${drinks[0][`strIngredient${i}`]} - ${
               drinks[0][`strMeasure${i}`]
             }`;
+            if (ingredients[i]) {
+              text += `${ingredients[i]} `;
+            }
           } else {
             break;
           }
@@ -41,8 +44,8 @@ const SingleCoktail = () => {
           info,
           glass,
           Instructons,
-          ingredients,
         };
+        setIngredientString(text);
         setcocktail(Newcocktail);
       } catch (error) {
         console.log(error);
@@ -50,9 +53,8 @@ const SingleCoktail = () => {
     }
     fetchCoctail();
   }, [id]);
-  console.log(cocktail);
-  const { title, Category, image, info, glass, Instructons, ingredients } =
-    cocktail;
+
+  const { title, Category, image, info, glass, Instructons } = cocktail;
   return (
     <section className="SingleCoctail__container section__padding">
       <Link to={"/"} className="SingleCoctail__container-btn">
@@ -61,7 +63,32 @@ const SingleCoktail = () => {
       <h1 className="SingleCoctail__container-title">{title}</h1>
       <div className="SingleCoctail__container-cocktail-details">
         <img src={image} alt={title} className="SingleCoctail__container-img" />
-        <div className="SingleCoctail__container-cocktail-details-info"></div>
+        <div className="SingleCoctail__container-cocktail-details-info">
+          <p>
+            <span className="info-title"> Name :</span>
+            {title}
+          </p>
+          <p>
+            <span className="info-title"> Category :</span>
+            {Category}
+          </p>
+          <p>
+            <span className="info-title"> Info :</span>
+            {info}
+          </p>
+          <p>
+            <span className="info-title"> Glass :</span>
+            {glass}
+          </p>
+          <p>
+            <span className="info-title"> Instructons :</span>
+            {Instructons}
+          </p>
+          <p>
+            <span className="info-title"> Ingredients :</span>
+            {ingredientString} .
+          </p>
+        </div>
       </div>
     </section>
   );
