@@ -2,7 +2,6 @@ import { Navbar, Showcase } from "./components/index";
 import { About, Home, Contact, Error, SingleCocltail } from "./pages/index";
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-
 import "./app.css";
 const App = () => {
   return (
