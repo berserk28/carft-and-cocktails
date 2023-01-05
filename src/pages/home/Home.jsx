@@ -3,7 +3,7 @@ import { Showcase, List_cocktails } from "../../components";
 import { useGlobalContext } from "../../context";
 import "./home.css";
 export default function Home() {
-  const { searchTerm, searchValue } = useGlobalContext();
+  const { searchValue } = useGlobalContext();
 
   if (searchValue !== "") {
     return (

@@ -48,7 +48,7 @@ const SingleCoktail = () => {
         setIngredientString(text);
         setcocktail(Newcocktail);
       } catch (error) {
-        console.log(error);
+        console.log("error");
       }
     }
     fetchCoctail();

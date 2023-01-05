@@ -17,7 +17,7 @@ const contact = () => {
           </div>
           <div class="form-control">
             <label for="phone">Phone Number</label>
-            <input type="number " id="phone" placeholder="Phone" />
+            <input type="number " id="Phone" placeholder="Phone" />
           </div>
 
           <div class="form-control">
