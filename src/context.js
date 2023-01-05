@@ -11,7 +11,6 @@ const AppProvider = ({ children }) => {
   const [isloading, setIsloading] = useState(true);
   const [error, setError] = useState(true);
   const [coktailId, setcoktailId] = useState("");
-
   const fetchData = async () => {
     setIsloading(true);
     try {
