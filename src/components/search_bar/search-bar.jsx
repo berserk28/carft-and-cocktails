@@ -1,7 +1,7 @@
 import React from "react";
 import { useGlobalContext } from "../../context";
 function Search_bar() {
-  const { searchTerm, searchValue, setSearchTerm, setSearchValue, cocktails } =
+  const { searchTerm, searchValue, setSearchTerm, setSearchValue } =
     useGlobalContext();
   const handleChange = (event) => {
     setSearchValue(event.target.value);

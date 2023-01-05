@@ -7,7 +7,7 @@ const Spinner = () => {
         src={spinner}
         width={180}
         className="text-center mx-auto"
-        alt="loading ..."
+        alt="loading ...."
       />
     </div>
   );

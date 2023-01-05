@@ -7,7 +7,7 @@ import Cocktail from "../cocktail/cocktail";
 import Error from "../../pages/error/error";
 
 function List_cocktails() {
-  const { searchValue, isloading, cocktails, error } = useGlobalContext();
+  const { isloading, cocktails, error } = useGlobalContext();
 
   if (isloading)
     return (
