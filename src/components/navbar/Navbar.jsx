@@ -6,13 +6,10 @@ import "./navbar.css";
 import { useGlobalContext } from "../../context";
 
 const Menu = () => {
-  const { setSearchTerm } = useGlobalContext();
   return (
     <>
       <p>
-        <Link to="/" onClick={() => setSearchTerm(false)}>
-          Home
-        </Link>
+        <Link to="/">Home</Link>
       </p>
       <p>
         <Link to="/About">About</Link>
@@ -30,7 +27,9 @@ export default function Navbar() {
   return (
     <nav className="Cocktail__navbar nav-bg">
       <div className="Cocktail__navbar-logo">
-        <p className="logo-text">Cocktails</p>
+        <p className="logo-text">
+          <Link to="/">Cocktails</Link>
+        </p>
         <FaCocktail className="logo " />
       </div>
 
@@ -39,8 +38,12 @@ export default function Navbar() {
           <Menu />
         </div>
         <div className="Cocktail__navbar-sign">
-          <p>Sign in</p>
-          <button>Sign Up</button>
+          <p>
+            <Link to={"/Contact"}>Sign In</Link>
+          </p>
+          <button>
+            <Link to={"/Contact"}>Sign Up</Link>
+          </button>
         </div>
         <div className="Cocktail__navbar-menu">
           {toggleMenu ? (
