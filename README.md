@@ -1,6 +1,13 @@
-# Getting Started with Create React App
+# Cocktails
+## Description
+Cocktails is a React Application that lets search for your favorite drinks , and give you information about ur drink and  how to make it .
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Technologies used
+React - Bootstrap . 
+<div><img src="./screenshots/home.png" width="800" alt="Home Page"></div>
+<div><img src="./screenshots/search.png" width="800" alt="Home Page"></div>
+<div><img src="./screenshots/singleCoktail.png" width="800" alt="Quiz"></div>
 
 ## Available Scripts
 
