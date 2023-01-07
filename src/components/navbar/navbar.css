@@ -74,6 +74,7 @@
   display: none;
   margin-left: 2rem;
   position: relative;
+  z-index: 1;
 }
 
 .Cocktail__navbar-menu-container-links {
@@ -86,7 +87,6 @@
   min-width: 70px;
   opacity: 0.9;
   box-shadow: 0 0 5 rgba(0, 0, 0, 0.2);
-  z-index: 2;
 }
 
 .Cocktail__navbar-menu svg {
