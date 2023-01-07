@@ -8,10 +8,9 @@
 .SingleCoctail__container-btn {
   background-color: var(--color-btn);
   padding: 8px 16.8px;
-  font-size: 12.8px;
   text-align: center;
   min-width: 170px;
-  font-size: 20px;
+  font-size: 17px;
   border-radius: 15px;
   color: #ddd;
   font-family: var(--font-links);
@@ -46,7 +45,7 @@
 }
 .info-title {
   background: var(--color-btn);
-
+  font-size: 17px;
   border-radius: 0.25rem;
   color: var(--color-primary);
   padding: 3px 10px;

@@ -4,7 +4,7 @@ const contact = () => {
   return (
     <div className="container">
       <div class="form  ">
-        <h2>Register With US</h2>
+        <h2>Register With Us</h2>
         <p>Please use the form below to contact us</p>
         <form>
           <div class="form-control">

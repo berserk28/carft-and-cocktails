@@ -2,12 +2,13 @@
   color: var(--color-primary);
 }
 .Cocktail__navbar {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 50px;
   line-height: 36px;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 500;
-  padding: 2rem 10rem;
-  justify-content: space-between;
+  padding: 1.2rem 2rem;
   text-align: center;
   font-family: var(--font-family-text);
   letter-spacing: -0.05em;
@@ -16,9 +17,9 @@
 
 .Cocktail__navbar-logo {
   display: flex;
-  flex: 1;
+  margin-left: 1rem;
   justify-content: flex-start;
-  height: 50px;
+  height: 60px;
 }
 .logo {
   color: var(--color-btn);
@@ -27,7 +28,7 @@
 
 .logo-text {
   margin-right: 5px;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-weight: 500;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -38,7 +39,6 @@
 
 .Cocktail__navbar-links {
   display: flex;
-  flex: 1;
   justify-content: flex-end;
   align-items: center;
   line-height: 20px;
@@ -48,7 +48,7 @@
   display: flex;
 }
 .Cocktail__navbar-links p {
-  padding: 1rem 2rem;
+  padding: 1rem;
   justify-content: center;
 }
 .Cocktail__navbar-links p a,
@@ -56,18 +56,19 @@
   padding: 7px 14px;
   border-radius: 5px;
 }
-.Cocktail__navbar-sign p {
+.Cocktail__navbar-sign a {
   margin-right: 5px;
+  font-size: 15px;
 }
 .Cocktail__navbar-links p a:hover,
-.Cocktail__navbar-sign p:hover {
-  background-color: #042c54;
+.Cocktail__navbar-sign p :hover {
+  background-color: var(--color-background);
   color: white;
 }
 .Cocktail__navbar-sign button:hover {
   background-color: var(--color-primary);
+  color: #fff;
 }
-
 /* styling the responsive menu */
 .Cocktail__navbar-menu {
   display: none;
@@ -109,9 +110,7 @@
 .Cocktail__navbar-sign p {
   padding: 5px 10px;
   margin-bottom: 8px;
-  padding: 0.5rem 1rem;
   color: #fff;
-  background: #ff4820;
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 18px;
@@ -122,7 +121,10 @@
   border-radius: 5px;
   letter-spacing: 2px;
 }
-.Cocktail__navbar-sign p {
+.Cocktail__navbar-sign button {
+  background-color: var(--color-btn);
+}
+.Cocktail__navbar-sign p a {
   background-color: var(--color-footer);
 }
 @media only screen and (max-width: 1200px) {
