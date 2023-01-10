@@ -8,7 +8,7 @@ React - Bootstrap .
 <div><img src="./screenshots/home.png" width="800" alt="Home Page"></div>
 <div><img src="./screenshots/search.png" width="800" alt="Home Page"></div>
 <div><img src="./screenshots/singleCoktail.png" width="800" alt="Quiz"></div>
-
+**Live preview:** [cocktails](https://cocktails-resource.netlify.app/)
 ## Available Scripts
 
 In the project directory, you can run:
