@@ -3,3 +3,4 @@ export { default as Navbar } from "./navbar/Navbar";
 export { default as Search_bar } from "./search_bar/search-bar";
 export { default as List_cocktails } from "./List_cocktails/List_cocktails";
 export { default as Spinner } from "./spinner/Spinner";
+export { default as FormInput } from "./FormInput/FormInput";

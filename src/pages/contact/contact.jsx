@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import "./contact.css";
+import FormInput from "../../components/FormInput/FormInput";
 const Contact = () => {
   const [values, setValues] = useState({});
   const Inputs = [
@@ -19,14 +20,14 @@ const Contact = () => {
       PlaceHolder: "Enter ur Email",
     },
     {
-      id: 2,
+      id: 3,
       name: "date",
       text: "date",
       label: "date",
       PlaceHolder: "Enter ur date",
     },
     {
-      id: 3,
+      id: 4,
       name: "Password",
       text: "text",
       label: "Password",
@@ -41,9 +42,12 @@ const Contact = () => {
     },
   ];
   return (
-    <div className="form">
+    <div className="form-container app-bg">
       <form className="form">
-        <FormInput />
+        <h2>register with us </h2>
+        {Inputs.map((item) => {
+          return <FormInput key={item.id} {...item} />;
+        })}
       </form>
     </div>
   );
