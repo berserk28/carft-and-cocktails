@@ -4,6 +4,7 @@ import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import { FaCocktail } from "react-icons/fa";
 import "./navbar.css";
 import { useGlobalContext } from "../../context";
+import { useRef } from "react";
 
 const Menu = () => {
   return (
@@ -22,7 +23,7 @@ const Menu = () => {
 };
 
 export default function Navbar() {
-  const [toggleMenu, setToggleMenu] = useState(false);
+  const { toggleMenu, setToggleMenu } = useGlobalContext();
 
   return (
     <nav className="Cocktail__navbar nav-bg">
@@ -33,7 +34,7 @@ export default function Navbar() {
         <FaCocktail className="logo " />
       </div>
 
-      <div className="Cocktail__navbar-links">
+      <div className="Cocktail__navbar-links ">
         <div className="Cocktail__navbar-links-container">
           <Menu />
         </div>

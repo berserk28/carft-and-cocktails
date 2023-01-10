@@ -3,9 +3,19 @@ import { About, Home, Contact, Error, SingleCocltail } from "./pages/index";
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./app.css";
+import { useGlobalContext } from "./context";
 const App = () => {
+  const { toggleMenu, setToggleMenu } = useGlobalContext();
+  const handle = (e) => {
+    if (
+      toggleMenu &&
+      e.target.className !== "Cocktail__navbar-menu-container-links"
+    ) {
+      setToggleMenu(false);
+    }
+  };
   return (
-    <div className="app-bg">
+    <div className="app-bg" onClick={handle}>
       <Router>
         <Navbar />
         <Routes>

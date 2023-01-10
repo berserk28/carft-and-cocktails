@@ -10,7 +10,7 @@ const AppProvider = ({ children }) => {
   const [cocktails, setCokctails] = useState([]);
   const [isloading, setIsloading] = useState(true);
   const [error, setError] = useState(true);
-  const [coktailId, setcoktailId] = useState("");
+  const [toggleMenu, setToggleMenu] = useState(false);
   const fetchData = async () => {
     setIsloading(true);
     try {
@@ -40,7 +40,8 @@ const AppProvider = ({ children }) => {
         cocktails,
         isloading,
         error,
-        setcoktailId,
+        toggleMenu,
+        setToggleMenu,
       }}
     >
       {children}
