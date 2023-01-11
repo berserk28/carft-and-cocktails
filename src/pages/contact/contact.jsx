@@ -54,7 +54,7 @@ const Contact = () => {
   console.log(values);
   return (
     <div className="form-container app-bg">
-      <form className="form">
+      <form>
         <h2>register with us </h2>
         {inputs.map((input) => {
           return <FormInput key={input.id} {...input} change={onChange} />;
