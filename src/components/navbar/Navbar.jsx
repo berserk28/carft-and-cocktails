@@ -40,7 +40,7 @@ export default function Navbar() {
         </div>
         <div className="Cocktail__navbar-sign">
           <p>
-            <Link to={"/Contact"}>Sign In</Link>
+            <Link to={"/Sign_in"}>Sign In</Link>
           </p>
           <button>
             <Link to={"/Contact"}>Sign Up</Link>
