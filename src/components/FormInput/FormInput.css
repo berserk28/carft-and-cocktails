@@ -1,16 +1,39 @@
 .input-container {
   display: flex;
+  position: relative;
   flex-direction: column;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   width: 280px;
 }
 
 .input-container label {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  font-weight: 500;
 }
 
 .input-container input {
   border-radius: 5px;
   border: 1px solid gray;
-  padding: 5px 5px;
+  padding: 10px 5px;
+}
+
+.input-container span {
+  position: relative;
+  margin-top: 2px;
+  display: none;
+  padding: 5px;
+  border-radius: 10px;
+  color: var(--error-color);
+  background-color: var(--errorBg-color);
+  font-size: 14px;
+  text-align: center;
+  transition: transform 2s ease-in-out;
+}
+
+input:invalid[focused="true"] {
+  border: 1px solid rgb(225, 94, 94);
+}
+
+input:invalid[focused="true"] ~ span {
+  display: block;
 }
