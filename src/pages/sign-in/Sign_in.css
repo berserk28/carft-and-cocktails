@@ -6,9 +6,19 @@
 }
 
 .Sign-in_page {
-  display: flex;
+  display: grid;
   flex-direction: row;
+  grid-template-columns: auto auto;
+  grid-gap: 1rem;
+  max-width: 900px;
+  background-color: rgb(6, 6, 42);
+  border-radius: 10px;
 }
+
+.Sign-in_page img {
+  max-width: 300px;
+}
+
 .Sign-in__page-form {
   border-radius: 10px;
   background-color: #fff;
@@ -24,4 +34,12 @@
   margin-bottom: 20px;
 
   color: var(--color-footer);
+}
+@media only screen and (max-width: 420px) {
+  .Sign-in_page img {
+    display: none;
+  }
+  .Sign-in__page-form {
+    padding: 4px 20px;
+  }
 }
