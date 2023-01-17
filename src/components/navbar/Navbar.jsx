@@ -15,9 +15,9 @@ const Menu = () => {
       <p>
         <Link to="/About">About</Link>
       </p>
-      <p>
+      {/* <p>
         <Link to="/Contact">Contact</Link>
-      </p>
+      </p> */}
     </>
   );
 };
@@ -38,14 +38,14 @@ export default function Navbar() {
         <div className="Cocktail__navbar-links-container">
           <Menu />
         </div>
-        <div className="Cocktail__navbar-sign">
+        {/* <div className="Cocktail__navbar-sign">
           <p>
             <Link to={"/Sign_in"}>Sign In</Link>
           </p>
           <button>
             <Link to={"/Contact"}>Sign Up</Link>
           </button>
-        </div>
+        </div> */}
         <div className="Cocktail__navbar-menu">
           {toggleMenu ? (
             <RiCloseLine

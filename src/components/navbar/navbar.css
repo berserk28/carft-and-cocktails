@@ -1,5 +1,7 @@
 .nav-bg {
   color: var(--color-primary);
+  display: flex;
+  flex-direction: row;
 }
 .Cocktail__navbar {
   display: grid;
@@ -18,7 +20,7 @@
 .Cocktail__navbar-logo {
   display: flex;
   margin-left: 1rem;
-  justify-content: flex-start;
+  justify-content: center;
   height: 60px;
 }
 .logo {
@@ -39,7 +41,7 @@
 
 .Cocktail__navbar-links {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   line-height: 20px;
   font-family: var(--font-links);
