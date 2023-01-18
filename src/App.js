@@ -1,12 +1,5 @@
 import { Navbar, Showcase } from "./components/index";
-import {
-  About,
-  Home,
-  Contact,
-  Error,
-  SingleCocltail,
-  Sign_in,
-} from "./pages/index";
+import { About, Home, Error, SingleCocltail } from "./pages/index";
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./app.css";
@@ -28,8 +21,7 @@ const App = () => {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/sign_in" element={<Sign_in />} />
+
           <Route path="/SingleCocltail/:id" element={<SingleCocltail />} />
           <Route path="*" element={<Error />} />
         </Routes>
