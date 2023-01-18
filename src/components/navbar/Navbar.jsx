@@ -1,10 +1,8 @@
-import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import { FaCocktail } from "react-icons/fa";
 import "./navbar.css";
 import { useGlobalContext } from "../../context";
-import { useRef } from "react";
 
 const Menu = () => {
   return (

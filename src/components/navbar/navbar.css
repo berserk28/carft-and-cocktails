@@ -41,10 +41,11 @@
 
 .Cocktail__navbar-links {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   line-height: 20px;
   font-family: var(--font-links);
+  margin-right: 3rem;
 }
 .Cocktail__navbar-links-container {
   display: flex;

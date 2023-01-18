@@ -1,11 +1,9 @@
 import React from "react";
-import { useGlobalContext } from "../../context";
+
 import "./showcase.css";
 import image from "../../images/glass.png";
 import Search_bar from "../search_bar/search-bar";
 export default function Showcase() {
-  const { setSearchValue, searchValue, setSearchTerm } = useGlobalContext();
-
   return (
     <div className="showcase__container section__padding ">
       <div className="showcase__container-header">

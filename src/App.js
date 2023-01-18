@@ -1,4 +1,4 @@
-import { Navbar, Showcase } from "./components/index";
+import { Navbar } from "./components/index";
 import { About, Home, Error, SingleCocltail } from "./pages/index";
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
