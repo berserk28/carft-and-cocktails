@@ -1,6 +1,6 @@
 # Cocktails
 ## Description
-Cocktails is a React Application that allow you to search for your favorite drinks , and give you information about ur drink and  how to make it .
+Cocktails is a React Application that allows you to search for your favorite drinks , and gives you information about ur drink and how to make it .
 
 
 ## Technologies used
